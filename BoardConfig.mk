@@ -16,7 +16,7 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/alioth.config
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := alioth,aliothin

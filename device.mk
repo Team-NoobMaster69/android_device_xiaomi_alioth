@@ -32,6 +32,11 @@ PRODUCT_PACKAGES += \
 # Init
 $(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_alioth)
 
+# Kernel
+LOCAL_KERNEL := device/xiaomi/alioth-kernel/Image
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
